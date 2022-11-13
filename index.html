@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Flight ticket Login Form</title>
+<style>
+body{
+	background-image: url(flightwing.jpg);
+	background-size: cover;
+}
+
+.header{
+	position: absolute;
+	top: calc(30% - 160px);
+	left: calc(50% - 200px);
+}
+.header div span{
+	color:black;
+	position: absolute;
+	top: calc(2%);
+	left: calc(-4%);
+	text-shadow: 2px 2px black;
+	font-family: 'serif';
+	font-size: 45px;
+	text-shadow: 2px 2px gray;
+	width: 500px;
+}
+h3 {
+	color:black;
+}
+label {
+	color:black;
+	padding-right:2px;
+}
+.register
+{
+	display: inline-block;
+	position: absolute;
+	top: calc(65% - 10px);
+	left: calc(40% - 35px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+}
+
+.login{
+	position: absolute;
+	top: calc(30% - 10px);
+	left: calc(40% - 35px );
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+}
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: black;
+	border: 1px solid black;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: black;
+	border: 1px solid black;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=submit]{
+	width: 250px;
+	height: 35px;
+	background: black;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: white;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+.register  input[type=submit]{
+	width: 260px;
+	height: 35px;
+	background: black;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: white;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login,.register input[type=submit]:hover{
+	opacity: 0.8;
+}
+
+.login,.register input[type=submit]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid black;
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid black;
+}
+
+.login,.register input[type=submit]:focus{
+	outline: none;
+}
+ </style> 
+</head>
+<body>
+		<div class="header">
+			<div><span>Flight Ticket Booking</span></div>
+		</div>
+		<br>
+		<form action="login.php" method="post">
+		<div class="login">
+				<label> USERID </label><br />
+				<input type="text" name="userid" size="25" required><br> <br>
+				<label>PASSWORD</label><br />
+				<input type="password" name="password" size="25" required><br> <br>
+				<input type="submit" value="Login">
+		</div>
+		</form>
+	<form action="register.php" method="post">
+	<div class="register">
+				<h3>Are you a new user?, Click</h3>
+				<input type="submit" value="Sign Up">
+	</div>
+	</form> 
+</body>
+</html>
